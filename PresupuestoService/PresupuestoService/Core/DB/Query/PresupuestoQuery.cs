@@ -23,7 +23,7 @@ namespace PresupuestoService.Core.DB.Query
 
         #region CREATE
 
-        public async Task CrearRastreo(Core.DB.Models.PresupuestoDBModel user) //CREATE
+        public async Task CrearPresupuesto(Core.DB.Models.PresupuestoDBModel user) //CREATE
         {
             await _presupuestoCollection.InsertOneAsync(user);
         }

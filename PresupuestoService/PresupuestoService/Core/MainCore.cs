@@ -9,11 +9,11 @@ namespace PresupuestoService.Core
     {
         #region CREATE
 
-        public void CrearRastreo(Core.DB.Models.PresupuestoDBModel data)
+        public void CrearPresupuesto(Core.DB.Models.PresupuestoDBModel data)
         {
 
             Core.DB.Query.PresupuestoQuery qCreate = new Core.DB.Query.PresupuestoQuery("mongodb://51.83.73.69:27017");
-            qCreate.CrearRastreo(data);
+            qCreate.CrearPresupuesto(data);
 
         }
 

@@ -19,9 +19,10 @@ namespace PresupuestoService.Core.DB.Models
     public class PresupuestoDBModel
     {
         public ObjectId _id { get; set; }
-        public ObjectId[] contactoService { get; set; }
         [BsonIgnoreIfNull]
-        public ObjectId[] rastreoService { get; set; }
+        public List<ObjectId> contactoService { get; set; }
+        [BsonIgnoreIfNull]
+        public List<ObjectId> rastreoService { get; set; }
         [BsonIgnoreIfNull]
         public DateTime fecha { get; set; }
         [BsonIgnoreIfNull]
@@ -45,9 +46,9 @@ namespace PresupuestoService.Core.DB.Models
         [BsonIgnoreIfNull]
         public string email { get; set; }
         [BsonIgnoreIfNull]
-        public string[] buscadoresContratados { get; set; }
+        public List<string> buscadoresContratados { get; set; }
         [BsonIgnoreIfNull]
-        public string[] keyWords { get; set; }
+        public List<string> keyWords { get; set; }
         [BsonIgnoreIfNull]
         public string totalPresupuesto { get; set; }
         [BsonIgnoreIfNull]
@@ -59,13 +60,12 @@ namespace PresupuestoService.Core.DB.Models
         [BsonIgnoreIfNull]
         public bool presupuestoModificado { get; set; } = true;
         [BsonIgnoreIfNull]
-        public PDFGenerado[] pdfGenerado { get; set; }
+        public List<PDFGenerado> pdfGenerado { get; set; }
         [BsonIgnoreIfNull]
         public bool clienteFirmado { get; set; } = false;
         [BsonIgnoreIfNull]
         public bool presupuestoDesechado { get; set; } = false;
         [BsonIgnoreIfNull]
         public bool motivoDesechado { get; set; } = false;
-
     }
 }

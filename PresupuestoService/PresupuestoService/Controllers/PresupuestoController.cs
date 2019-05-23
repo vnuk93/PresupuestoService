@@ -42,7 +42,6 @@ namespace PresupuestoService.Controllers
         #region POST
 
         // POST: api/Presupuesto
-
         [HttpPost]
         [Route("api/Presupuesto")]
         public async Task<HttpResponseMessage> Post(HttpRequestMessage request)
@@ -59,6 +58,7 @@ namespace PresupuestoService.Controllers
         #endregion
 
         #region PUT
+
         // PUT: api/Presupuesto/5
         [HttpPut]
         [Route("api/Presupuesto/{id}")]
@@ -77,6 +77,7 @@ namespace PresupuestoService.Controllers
 
             return "Error";
         }
+
         #endregion
 
         #region DELETE

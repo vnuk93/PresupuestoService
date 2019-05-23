@@ -15,7 +15,7 @@ namespace PresupuestoService.Core.DB.Models
         [BsonIgnoreIfNull]
         public ObjectId PDFFirmadoDocumentService { get; set; }
     }
-
+    [BsonIgnoreExtraElements]
     public class PresupuestoDBModel
     {
         public ObjectId _id { get; set; }
